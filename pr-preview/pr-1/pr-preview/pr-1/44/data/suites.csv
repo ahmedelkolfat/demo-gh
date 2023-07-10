@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Jul 10 03:10:18 GMT 2023","Mon Jul 10 03:10:18 GMT 2023","143","chromium","","","","","equal",""
-"passed","Mon Jul 10 03:10:16 GMT 2023","Mon Jul 10 03:10:18 GMT 2023","1211","chromium","","","","","has title",""
