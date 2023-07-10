@@ -65,6 +65,8 @@ jobs:
       env:
         source-dir: ./allure-report
         PERSONAL_TOKEN: ${{ secrets.AHMED_SECRET }}
+        if: always()
+        continue-on-error: true
     # - name: Deploy report to Github Pages
     #   if: always()
     #   uses: peaceiris/actions-gh-pages@v2
