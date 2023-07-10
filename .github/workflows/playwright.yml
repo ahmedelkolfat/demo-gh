@@ -66,9 +66,7 @@ jobs:
       with:
         source-dir: ./allure-report
         token: ${{ secrets.AHMED_SECRET }}
-        message: |
-    Release ${{ github.sha }} to <https://pr-${{ github.event.number }}.example.com>
-    
+
     # - name: Deploy report to Github Pages
     #   if: always()
     #   uses: peaceiris/actions-gh-pages@v2
