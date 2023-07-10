@@ -62,7 +62,7 @@ jobs:
       uses: rossjrw/pr-preview-action@v1
       with:
         source-dir: allure-history
-    
+        token: ${{ secrets.AHMED_SECRET }}
     - name: Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v2
