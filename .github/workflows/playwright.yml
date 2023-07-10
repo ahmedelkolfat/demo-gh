@@ -3,11 +3,11 @@ on:
   push:
     branches: [ main, master ]
   pull_request:
-    # types:
-    #   - opened
-    #   - reopened
-    #   - synchronize
-    #   - closed
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
     branches: [ main, master ]
 permissions:
   contents: read
@@ -57,10 +57,10 @@ jobs:
         allure_history: allure-history
         keep_reports: 20
 
-    # - name: Deploy preview
-    #   uses: rossjrw/pr-preview-action@v1
-    #   with:
-    #     source-dir: allure-history
+    - name: Deploy preview
+      uses: rossjrw/pr-preview-action@v1
+      with:
+        source-dir: allure-history
     
     - name: Deploy report to Github Pages
       if: always()
