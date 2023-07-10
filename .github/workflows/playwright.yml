@@ -16,7 +16,7 @@ permissions:
   pull-requests: write
 
 concurrency: preview-${{ github.ref }}
-  # group: "pages"
+  group: "pages"
   # cancel-in-progress: false
 
 jobs:
