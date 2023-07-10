@@ -62,11 +62,13 @@ jobs:
 
     - name: Deploy preview
       uses: rossjrw/pr-preview-action@v1.4.4
-      env:
+      with:
         source-dir: ./allure-report
+        preview-branch: gh-pages
+        umbrella-dir: pr-preview
+        action: auto
         PERSONAL_TOKEN: ${{ secrets.AHMED_SECRET }}
-        if: always()
-        continue-on-error: true
+
     # - name: Deploy report to Github Pages
     #   if: always()
     #   uses: peaceiris/actions-gh-pages@v2
