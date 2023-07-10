@@ -61,7 +61,7 @@ jobs:
     - name: Deploy preview
       uses: rossjrw/pr-preview-action@v1
       with:
-        source-dir: allure-history
+        source-dir: allure-report
         token: ${{ secrets.AHMED_SECRET }}
     - name: Deploy report to Github Pages
       if: always()
