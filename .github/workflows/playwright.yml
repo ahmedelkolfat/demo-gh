@@ -61,7 +61,7 @@ jobs:
 
 
     - name: Deploy preview
-      uses: rossjrw/pr-preview-action@v1
+      uses: rossjrw/pr-preview-action@v1.4.4
       with:
         source-dir: ./allure-report
         token: ${{ secrets.AHMED_SECRET }}
