@@ -13,6 +13,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  pull-requests: write
 
 concurrency: preview-${{ github.ref }}
   # group: "pages"
@@ -64,11 +65,10 @@ jobs:
       uses: rossjrw/pr-preview-action@v1.4.4
       with:
         source-dir: ./allure-report
-        preview-branch: gh-pages
-        umbrella-dir: pr-preview
-        action: auto
-        PERSONAL_TOKEN: ${{ secrets.AHMED_SECRET }}
-
+        token: ${{ secrets.AHMED_SECRET }}
+        message: |
+    Release ${{ github.sha }} to <https://pr-${{ github.event.number }}.example.com>
+    
     # - name: Deploy report to Github Pages
     #   if: always()
     #   uses: peaceiris/actions-gh-pages@v2
