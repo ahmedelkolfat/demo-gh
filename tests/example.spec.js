@@ -7,8 +7,8 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
-test('equal', async ({ page }) => {
-  
+test('test 2', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
 
-  await expect(1).toEqual(1)
+  await expect(page).toHaveTitle(/Playwright/);
 });

@@ -68,6 +68,9 @@ jobs:
       with:
         source-dir: allure-history
         token: ${{ secrets.AHMED_SECRET }}
+        preview-branch: gh-pages
+        umbrella-dir: pr-preview
+        action: auto
 
 
 
