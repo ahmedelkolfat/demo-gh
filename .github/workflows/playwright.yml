@@ -66,7 +66,7 @@ jobs:
       if: always()
       continue-on-error: true
       with:
-        source-dir: ./allure-report
+        source-dir: allure-history
         token: ${{ secrets.AHMED_SECRET }}
 
 
