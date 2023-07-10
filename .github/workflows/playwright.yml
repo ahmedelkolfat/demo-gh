@@ -63,15 +63,15 @@ jobs:
     - name: Deploy preview
       uses: rossjrw/pr-preview-action@v1
       with:
-        source-dir: allure-report
+        source-dir: ./allure-report
         token: ${{ secrets.AHMED_SECRET }}
-    - name: Deploy report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.AHMED_SECRET }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: allure-history
+    # - name: Deploy report to Github Pages
+    #   if: always()
+    #   uses: peaceiris/actions-gh-pages@v2
+    #   env:
+    #     PERSONAL_TOKEN: ${{ secrets.AHMED_SECRET }}
+    #     PUBLISH_BRANCH: gh-pages
+    #     PUBLISH_DIR: allure-history
 
 
 
