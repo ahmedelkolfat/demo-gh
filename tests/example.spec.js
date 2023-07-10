@@ -6,3 +6,9 @@ test('has title', async ({ page }) => {
 
   await expect(page).toHaveTitle(/Playwright/);
 });
+
+test('equal', async ({ page }) => {
+  
+
+  await expect(page).toHaveTitle(/Playwright/);
+});
