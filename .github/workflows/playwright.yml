@@ -13,9 +13,11 @@ permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency: preview-${{ github.ref }}
   group: "pages"
   cancel-in-progress: false
+
 jobs:
   test:
     timeout-minutes: 60
